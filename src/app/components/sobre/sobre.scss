@@ -1,10 +1,10 @@
-@import './../../styles/variaveis.style';
+@use './../../styles/variaveis.style' as var;
 
 .sobre {
   width: 100%;
 
   a {
-    color: $accent-dark;
+    color: var.$accent-dark;
     text-decoration: none;
 
     &:hover {
@@ -13,7 +13,7 @@
   }
 
   p {
-    color: $text-secondary;
+    color: var.$text-secondary;
     line-height: 1.6;
     font-size: large;
   }
@@ -25,21 +25,21 @@
 
     li {
       margin-bottom: 0.5rem;
-      color: $text-secondary;
+      color: var.$text-secondary;
       font-size: large;
     }
   }
 
   h1 {
-    color: $text-primary;
+    color: var.$text-primary;
   }
 
   h2 {
-    color: $text-primary;
+    color: var.$text-primary;
   }
 
   h3 {
-    color: $accent-dark;
+    color: var.$accent-dark;
   }
 
   &__header,

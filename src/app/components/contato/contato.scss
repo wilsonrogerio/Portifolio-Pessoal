@@ -1,4 +1,4 @@
-@import '../../styles/variaveis.style';
+@use '../../styles/variaveis.style' as var;
 
 .contato {
   width: 100%;
@@ -15,13 +15,13 @@
     h2 {
       font-size: 2.5rem;
       margin-bottom: 20px;
-      color: $text-primary;
+      color: var.$text-primary;
     }
 
     p {
       font-size: 1.2rem;
       margin-bottom: 30px;
-      color: $text-secondary;
+      color: var.$text-secondary;
     }
   }
 
@@ -34,7 +34,7 @@
     display: inline-block;
 
     &.primary {
-      background: $button-color;
+      background: var.$button-color;
       color: rgba(255, 255, 255, 0.842);
     }
 
@@ -49,7 +49,7 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background: $bg-soft;
+        background: var.$bg-soft;
         transform: translateY(-2px);
       }
     }

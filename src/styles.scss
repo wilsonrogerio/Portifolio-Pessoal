@@ -1,17 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import './app/styles/variaveis.style';
+@use './app/styles/variaveis.style' as var;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $bg-soft ;
+  background-color: var.$bg-soft ;
 }
 
 body {
   font-family: 'Science Gothic', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: 100dvh;
 }
 
 // Exclui elementos da transição de visualização

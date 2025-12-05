@@ -1,8 +1,10 @@
-@import './styles/variaveis.style';
+@use './styles/variaveis.style' as var;
 
 .home {
   width: 100%;
   height: 100dvh;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,9 +13,9 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 20rem;
+    width: 18%;
     padding: 20px;
-    height: 100% !important;
+    height: 100dvh !important;
     background: #fff;
     background-color: #111418 !important;
     border-right: 1px solid rgba(0, 0, 0, 0.07);
@@ -27,6 +29,7 @@
 
   .content {
     width: 80%;
+    margin: auto 20px 20px 350px;
     height: 100dvh;
     scroll-behavior: smooth;
   }
@@ -138,7 +141,34 @@
       width: 100%;
       height: 85dvh;
       padding: 0 8px;
-      margin-top: 15%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width : 430px) {
+  .home {
+    flex-direction: column;
+
+    .nav {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 13% !important;
+      background-color: initial;
+      padding: 0;
+
+    }
+
+    .content {
+      width: 100%;
+      height: 60dvh;
+      padding: 0 8px;
+      margin: 0;
     }
   }
 }
@@ -163,9 +193,9 @@
 
     .content {
       width: 100%;
-      height: 79dvh;
+      height: 60dvh;
       padding: 0 8px;
-      margin-top: 15%;
+      margin: 0;
     }
   }
 }
@@ -188,7 +218,7 @@
 
     .content {
       width: 100%;
-      height: 80dvh;
+      height: 60dvh;
       padding: 0 8px;
     }
   }
