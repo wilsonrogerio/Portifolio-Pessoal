@@ -30,6 +30,12 @@ export class Resumo {
     tecName: 'Angular + NestJS',
     descript: 'Aplicação full stack desenvolvida com Angular no front-end e NestJS no back-end, seguindo a arquitetura MVC.',
     linkRepository: 'https://github.com/wilsonrogerio/Social-Dev'
+  },
+  {
+    imgUrl: '/angular-tailwind.png',
+    tecName: 'Angular + Tailwind CSS',
+    descript: 'Um projeto moderno de aplicação web desenvolvido com Angular 20 e Tailwind CSS 4.',
+    linkRepository: 'https://github.com/wilsonrogerio/Angular-Tailwind'
   }
   ]
 
